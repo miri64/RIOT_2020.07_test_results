@@ -1,0 +1,30 @@
+r
+/home/vagrant/RIOT/tests/bench_xtimer/bin/native/tests_bench_xtimer.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+xtimer benchmark application.
+
+                     set() one     8237 / 1000 = 8
+                  remove() one     1489 / 1000 = 1
+          set() + remove() one     6621 / 1000 = 6
+  set() many increasing target     7914 / 1000 = 7
+               re-set()  first     2765 / 1000 = 2
+               re-set() middle     7707 / 1000 = 7
+               re-set()   last    13526 / 1000 = 13
+       remove() + set()  first     6012 / 1000 = 6
+       remove() + set() middle    11284 / 1000 = 11
+       remove() + set()   last    16600 / 1000 = 16
+      remove() many decreasing     1464 / 1000 = 1
+                  xtimer_now()     1208 / 1000 = 1
+              sizeof(xtimer_t)    28000 / 1000 = 28
+done.
+

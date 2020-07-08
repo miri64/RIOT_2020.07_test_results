@@ -1,0 +1,29 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/pkg_emlearn clean all
+rm -rf /home/vagrant/RIOT/tests/pkg_emlearn/bin/native/pkg-build/emlearn
+Building application "tests_pkg_emlearn" for "native" with MCU "native".
+
+In file included from /home/vagrant/RIOT/tests/pkg_emlearn/main.c:24:
+/home/vagrant/RIOT/tests/pkg_emlearn/model.h:7221:36: error: stray '\' in program
+ 7221 |     /* fix for no newline at eof */\n
+      |                                    ^
+/home/vagrant/RIOT/tests/pkg_emlearn/model.h:7221:37: error: data definition has no type or storage class [-Werror]
+ 7221 |     /* fix for no newline at eof */\n
+      |                                     ^
+/home/vagrant/RIOT/tests/pkg_emlearn/model.h:7221:37: error: type defaults to 'int' in declaration of 'n' [-Werror=implicit-int]
+In file included from /home/vagrant/RIOT/tests/pkg_emlearn/main.c:28:
+/home/vagrant/RIOT/tests/pkg_emlearn/bin/native/application_tests_pkg_emlearn/blobs/blob/digit.h:1:1: error: expected ',' or ';' before 'const'
+    1 | const unsigned char digit[] = {
+      | ^~~~~
+/home/vagrant/RIOT/tests/pkg_emlearn/bin/native/application_tests_pkg_emlearn/blobs/blob/digit.h:24:2: error: ISO C does not allow extra ';' outside of a function [-Werror=pedantic]
+   24 | };
+      |  ^
+/home/vagrant/RIOT/tests/pkg_emlearn/main.c: In function 'main':
+/home/vagrant/RIOT/tests/pkg_emlearn/main.c:33:41: error: 'digit' undeclared (first use in this function)
+   33 |            model_predict((const float *)digit, digit_len >> 2));
+      |                                         ^~~~~
+/home/vagrant/RIOT/tests/pkg_emlearn/main.c:33:41: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+gmake[1]: *** [/home/vagrant/RIOT/Makefile.base:108: /home/vagrant/RIOT/tests/pkg_emlearn/bin/native/application_tests_pkg_emlearn/main.o] Error 1
+make: *** [/home/vagrant/RIOT/tests/pkg_emlearn/../../Makefile.include:575: /home/vagrant/RIOT/tests/pkg_emlearn/bin/native/application_tests_pkg_emlearn.a] Error 2
+
+Return value: 2

@@ -1,0 +1,40 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/pkg_lora-serialization test
+r
+/home/vagrant/RIOT/tests/pkg_lora-serialization/bin/native/tests_pkg_lora-serialization.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Lora Serialization test
+
+Test 1
+Temperature and humidity
+---------------------------------
+- Writing temperature: 80.12
+- Writing humidity: 99.99
+- Encoded:  1f 4c 0f 27
+- Expected: 1f 4c 0e 27
+---------------------------------
+FAILED
+
+Test 2
+Coordinates and unix time
+---------------------------------
+- Writing coordinates: -33.905052, 151.26641
+- Writing unix time: 1467632413
+- Encoded:  64 a6 fa fd 6a 24 04 09 1d 4b 7a 57
+- Expected: 65 a6 fa fd 6a 24 04 09 1d 4b 7a 57
+---------------------------------
+FAILED
+Timeout in expect script at "child.expect('SUCCESS')" (tests/pkg_lora-serialization/tests/01-run.py:12)
+
+make: *** [/home/vagrant/RIOT/tests/pkg_lora-serialization/../../Makefile.include:770: test] Error 1
+
+Return value: 2

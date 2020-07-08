@@ -1,0 +1,31 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/cond_order test
+r
+/home/vagrant/RIOT/tests/cond_order/bin/native/tests_cond_order.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Condition variable order test
+Please refer to the README.md for more information
+
+T3 (prio 6): waiting on condition variable now
+T4 (prio 4): waiting on condition variable now
+T5 (prio 0): waiting on condition variable now
+T6 (prio 2): waiting on condition variable now
+T7 (prio 1): waiting on condition variable now
+First batch was signaled
+T5 (prio 0): condition variable was signaled now
+T7 (prio 1): condition variable was signaled now
+Unexpected end of file in expect script at "child.expect(r"T(\d+) \(prio (\d+)\): condition variable was signaled now")" (tests/cond_order/tests/01-run.py:32)
+
+Process already stopped
+make: *** [/home/vagrant/RIOT/tests/cond_order/../../Makefile.include:770: test] Error 1
+
+Return value: 2

@@ -1,0 +1,20 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/pkg_tensorflow-lite clean all
+rm -rf /home/vagrant/RIOT/tests/pkg_tensorflow-lite/bin/native/pkg-build/flatbuffers
+rm -rf /home/vagrant/RIOT/tests/pkg_tensorflow-lite/bin/native/pkg-build/gemmlowp
+rm -rf /home/vagrant/RIOT/tests/pkg_tensorflow-lite/bin/native/pkg-build/tensorflow-lite
+Building application "tests_pkg_tensorflow-lite" for "native" with MCU "native".
+
+"gmake" -C /home/vagrant/RIOT/build/pkg/tensorflow-lite/tensorflow/lite/c -f /home/vagrant/RIOT/pkg/tensorflow-lite/Makefile.tensorflow-lite-c
+"gmake" -C /home/vagrant/RIOT/build/pkg/tensorflow-lite/tensorflow/lite/core/api -f /home/vagrant/RIOT/pkg/tensorflow-lite/Makefile.tensorflow-lite-core
+"gmake" -C /home/vagrant/RIOT/build/pkg/tensorflow-lite/tensorflow/lite/kernels -f /home/vagrant/RIOT/pkg/tensorflow-lite/Makefile.tensorflow-lite-kernels
+"gmake" -C /home/vagrant/RIOT/build/pkg/tensorflow-lite/tensorflow/lite/kernels/internal -f /home/vagrant/RIOT/pkg/tensorflow-lite/Makefile.tensorflow-lite-kernels-internal
+"gmake" -C /home/vagrant/RIOT/build/pkg/tensorflow-lite/tensorflow/lite/micro/kernels -f /home/vagrant/RIOT/pkg/tensorflow-lite/Makefile.tensorflow-lite-micro-kernels
+"gmake" -C /home/vagrant/RIOT/build/pkg/tensorflow-lite/tensorflow/lite/micro/memory_planner -f /home/vagrant/RIOT/pkg/tensorflow-lite/Makefile.tensorflow-lite-memory
+"gmake" -C /home/vagrant/RIOT/build/pkg/tensorflow-lite/tensorflow/lite/micro -f /home/vagrant/RIOT/pkg/tensorflow-lite/Makefile.tensorflow-lite
+/usr/local/bin/ld: skipping incompatible /usr/local/lib/gcc9/gcc/x86_64-portbld-freebsd12.1/9.3.0/../../../libstdc++.so when searching for -lstdc++
+/usr/local/bin/ld: skipping incompatible /usr/local/lib/gcc9/gcc/x86_64-portbld-freebsd12.1/9.3.0/../../../libstdc++.a when searching for -lstdc++
+/usr/local/bin/ld: cannot find -lstdc++
+collect2: error: ld returned 1 exit status
+make: *** [/home/vagrant/RIOT/tests/pkg_tensorflow-lite/../../Makefile.include:572: /home/vagrant/RIOT/tests/pkg_tensorflow-lite/bin/native/tests_pkg_tensorflow-lite.elf] Error 1
+
+Return value: 2

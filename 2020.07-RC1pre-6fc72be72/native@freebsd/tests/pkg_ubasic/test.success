@@ -1,0 +1,19 @@
+r
+/home/vagrant/RIOT/tests/pkg_ubasic/bin/native/tests_pkg_ubasic.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Running test #1... done. Run time: 0.000 s
+Running test #2... done. Run time: 0.000 s
+Running test #3... done. Run time: 0.305 s
+Running test #4... done. Run time: 0.000 s
+Running test #5... done. Run time: 0.000 s
+

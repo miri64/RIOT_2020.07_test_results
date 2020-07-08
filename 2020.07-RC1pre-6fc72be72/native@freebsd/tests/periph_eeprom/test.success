@@ -1,0 +1,45 @@
+
+
+/home/vagrant/RIOT/tests/periph_eeprom/bin/native/tests_periph_eeprom.elf --eeprom /home/vagrant/RIOT/tests/periph_eeprom/bin/native/native.eeprom 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+EEPROM read write test
+
+Please refer to the README.md for more details
+
+EEPROM size:		1024
+> 
+> 
+> test
+test
+SUCCESS
+> reboot
+reboot
+
+
+		!! REBOOT !!
+
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+EEPROM read write test
+
+Please refer to the README.md for more details
+
+EEPROM size:		1024
+> read 0 4
+read 0 4
+Data read from EEPROM (4 bytes): AAAA
+> read 1020 4
+read 1020 4
+Data read from EEPROM (4 bytes): AAAA
+> 

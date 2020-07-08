@@ -1,0 +1,18 @@
+r
+/home/vagrant/RIOT/tests/bench_sys_base64/bin/native/tests_bench_sys_base64.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Verifying that base64 encoding works for benchmark input: OK
+Verifying that base64 decoding works for benchmark input: OK
+Encoding 10.000 x 96 bytes (128 bytes in base64): 17834 µs
+Decoding 10.000 x 96 bytes (128 bytes in base64): 10901 µs
+

@@ -1,0 +1,12 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/pkg_nanopb clean all
+rm -rf /home/vagrant/RIOT/tests/pkg_nanopb/bin/native/pkg-build/nanopb
+Building application "tests_pkg_nanopb" for "native" with MCU "native".
+
+"gmake" -C /home/vagrant/RIOT/build/pkg/nanopb -f /home/vagrant/RIOT/Makefile.base
+protoc --python_out=. nanopb.proto
+gmake[2]: protoc: No such file or directory
+gmake[2]: *** [Makefile:6: nanopb_pb2.py] Error 127
+gmake[1]: *** [/home/vagrant/RIOT/pkg/nanopb/Makefile.gensrc:22: /home/vagrant/RIOT/tests/pkg_nanopb/bin/native/application_tests_pkg_nanopb/simple.pb.c] Error 2
+make: *** [/home/vagrant/RIOT/tests/pkg_nanopb/../../Makefile.include:575: /home/vagrant/RIOT/tests/pkg_nanopb/bin/native/application_tests_pkg_nanopb.a] Error 2
+
+Return value: 2

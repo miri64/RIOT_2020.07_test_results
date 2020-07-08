@@ -1,0 +1,25 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/thread_exit test
+r
+/home/vagrant/RIOT/tests/thread_exit/bin/native/tests_thread_exit.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+main: starting
+main: exiting
+2nd: starting
+3rd: starting
+3rd: exiting
+Unexpected end of file in expect script at "child.expect("2nd: exiting")" (tests/thread_exit/tests/01-run.py:13)
+
+Process already stopped
+make: *** [/home/vagrant/RIOT/tests/thread_exit/../../Makefile.include:770: test] Error 1
+
+Return value: 2

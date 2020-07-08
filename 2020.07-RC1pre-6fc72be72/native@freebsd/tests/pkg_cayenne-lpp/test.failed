@@ -1,0 +1,29 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/pkg_cayenne-lpp test
+r
+/home/vagrant/RIOT/tests/pkg_cayenne-lpp/bin/native/tests_pkg_cayenne-lpp.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Cayenne LPP test application
+
+Test 1:
+-------
+Result: 03670110056700FF SUCCESS
+
+Test 2:
+-------
+Result: 0167FFD7067104D2FB2E0000
+Expected: 0167FFD8067104D1FB2F0000 FAILED
+Timeout in expect script at "child.expect('Result: [0-9A-Z]+ SUCCESS')" (tests/pkg_cayenne-lpp/tests/01-run.py:12)
+
+make: *** [/home/vagrant/RIOT/tests/pkg_cayenne-lpp/../../Makefile.include:770: test] Error 1
+
+Return value: 2

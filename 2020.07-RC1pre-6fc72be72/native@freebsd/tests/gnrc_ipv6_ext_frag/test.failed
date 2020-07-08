@@ -1,0 +1,7 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/gnrc_ipv6_ext_frag test
+[1;31mThis test requires root privileges.
+It's constructing and sending Ethernet frames.[0m
+
+make: *** [/home/vagrant/RIOT/tests/gnrc_ipv6_ext_frag/../../Makefile.include:770: test] Error 1
+
+Return value: 2

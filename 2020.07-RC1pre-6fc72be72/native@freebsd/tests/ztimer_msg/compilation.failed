@@ -1,0 +1,18 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/ztimer_msg clean all
+Building application "tests_ztimer_msg" for "native" with MCU "native".
+
+/home/vagrant/RIOT/sys/ztimer/util.c: In function 'ztimer_msg_receive_timeout':
+/home/vagrant/RIOT/sys/ztimer/util.c:118:17: error: 'ETIME' undeclared (first use in this function)
+  118 |         return -ETIME;
+      |                 ^~~~~
+/home/vagrant/RIOT/sys/ztimer/util.c:118:17: note: each undeclared identifier is reported only once for each function it appears in
+/home/vagrant/RIOT/sys/ztimer/util.c:123:1: error: control reaches end of non-void function [-Werror=return-type]
+  123 | }
+      | ^
+cc1: all warnings being treated as errors
+gmake[3]: *** [/home/vagrant/RIOT/Makefile.base:108: /home/vagrant/RIOT/tests/ztimer_msg/bin/native/ztimer_core/util.o] Error 1
+gmake[2]: *** [/home/vagrant/RIOT/Makefile.base:30: ALL--/home/vagrant/RIOT/sys/ztimer] Error 2
+gmake[1]: *** [/home/vagrant/RIOT/Makefile.base:30: ALL--/home/vagrant/RIOT/sys] Error 2
+make: *** [/home/vagrant/RIOT/tests/ztimer_msg/../../Makefile.include:575: /home/vagrant/RIOT/tests/ztimer_msg/bin/native/application_tests_ztimer_msg.a] Error 2
+
+Return value: 2

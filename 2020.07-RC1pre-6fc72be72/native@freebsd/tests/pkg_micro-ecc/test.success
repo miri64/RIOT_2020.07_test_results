@@ -1,0 +1,22 @@
+r
+/home/vagrant/RIOT/tests/pkg_micro-ecc/bin/native/tests_pkg_micro-ecc.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+micro-ecc compiled!
+Testing 4 random private key pairs and signature without using HWRNG
+Round 0
+Round 1
+Round 2
+Round 3
+Done with 0 error(s)
+SUCCESS
+

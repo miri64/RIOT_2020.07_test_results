@@ -1,0 +1,18 @@
+r
+/home/vagrant/RIOT/tests/build_system_cflags_spaces/bin/native/tests_build_system_cflags_spaces.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+The output of the configuration variables:
+SUPER_STRING: I love sentences with spaces
+DEFINED_AFTER_MAKEFILE_INCLUDE: 0
+CFLAGS_STRING_FROM_DOCKER: 
+

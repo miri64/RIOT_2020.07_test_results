@@ -1,0 +1,16 @@
+r
+/home/vagrant/RIOT/tests/driver_hd44780/bin/native/tests_driver_hd44780.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START]
+[SUCCESS]
+

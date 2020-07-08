@@ -1,0 +1,20 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/candev clean all
+Building application "tests_candev" for "native" with MCU "native".
+
+/home/vagrant/RIOT/tests/candev/main.c:37:8: error: unknown type name 'candev_linux_t'
+   37 | static candev_linux_t linux_dev;
+      |        ^~~~~~~~~~~~~~
+/home/vagrant/RIOT/tests/candev/main.c: In function 'main':
+/home/vagrant/RIOT/tests/candev/main.c:197:5: error: implicit declaration of function 'candev_linux_init'; did you mean 'can_device_init'? [-Werror=implicit-function-declaration]
+  197 |     candev_linux_init( &linux_dev, &(candev_linux_conf[0]));    /* vcan0 */
+      |     ^~~~~~~~~~~~~~~~~
+      |     can_device_init
+/home/vagrant/RIOT/tests/candev/main.c:197:38: error: 'candev_linux_conf' undeclared (first use in this function)
+  197 |     candev_linux_init( &linux_dev, &(candev_linux_conf[0]));    /* vcan0 */
+      |                                      ^~~~~~~~~~~~~~~~~
+/home/vagrant/RIOT/tests/candev/main.c:197:38: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+gmake[1]: *** [/home/vagrant/RIOT/Makefile.base:108: /home/vagrant/RIOT/tests/candev/bin/native/application_tests_candev/main.o] Error 1
+make: *** [/home/vagrant/RIOT/tests/candev/../../Makefile.include:575: /home/vagrant/RIOT/tests/candev/bin/native/application_tests_candev.a] Error 2
+
+Return value: 2

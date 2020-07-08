@@ -1,0 +1,27 @@
+r
+/home/vagrant/RIOT/tests/posix_time/bin/native/tests_posix_time.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+5 x usleep(i++ * 500000)
+wake up
+wake up
+wake up
+wake up
+wake up
+5 x sleep(i++)
+wake up
+wake up
+wake up
+wake up
+wake up
+DONE
+

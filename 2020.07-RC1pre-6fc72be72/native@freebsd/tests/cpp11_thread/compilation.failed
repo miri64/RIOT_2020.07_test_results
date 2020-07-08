@@ -1,0 +1,10 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/cpp11_thread clean all
+Building application "tests_cpp11_thread" for "native" with MCU "native".
+
+/usr/local/bin/ld: skipping incompatible /usr/local/lib/gcc9/gcc/x86_64-portbld-freebsd12.1/9.3.0/../../../libstdc++.so when searching for -lstdc++
+/usr/local/bin/ld: skipping incompatible /usr/local/lib/gcc9/gcc/x86_64-portbld-freebsd12.1/9.3.0/../../../libstdc++.a when searching for -lstdc++
+/usr/local/bin/ld: cannot find -lstdc++
+collect2: error: ld returned 1 exit status
+make: *** [/home/vagrant/RIOT/tests/cpp11_thread/../../Makefile.include:572: /home/vagrant/RIOT/tests/cpp11_thread/bin/native/tests_cpp11_thread.elf] Error 1
+
+Return value: 2

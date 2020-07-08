@@ -1,0 +1,52 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/gnrc_netif_ieee802154 test
+r
+Traceback (most recent call last):
+  File "/home/vagrant/RIOT/tests/gnrc_netif_ieee802154/tests/01-run.py", line 60, in <module>
+    sys.exit(run(testfunc, timeout=1))
+  File "/home/vagrant/RIOT/dist/pythonlibs/testrunner/__init__.py", line 28, in run
+    logfile=sys.stdout if echo else None)
+  File "/home/vagrant/RIOT/dist/pythonlibs/testrunner/spawn.py", line 86, in setup_child
+    sync_child(child, env)
+  File "/home/vagrant/RIOT/dist/pythonlibs/testrunner/spawn.py", line 125, in sync_child
+    TEST_INTERACTIVE_DELAY)
+  File "/home/vagrant/RIOT/dist/pythonlibs/testrunner/utils.py", line 30, in test_utils_interactive_sync
+    _test_utils_interactive_sync(child, retries, delay)
+  File "/home/vagrant/RIOT/dist/pythonlibs/testrunner/utils.py", line 17, in _test_utils_interactive_sync
+    ret = child.expect_exact([ready_exp, pexpect.TIMEOUT], timeout=delay)
+  File "/home/vagrant/.local/lib/python3.7/site-packages/pexpect/spawnbase.py", line 421, in expect_exact
+    return exp.expect_loop(timeout)
+  File "/home/vagrant/.local/lib/python3.7/site-packages/pexpect/expect.py", line 179, in expect_loop
+    return self.eof(e)
+  File "/home/vagrant/.local/lib/python3.7/site-packages/pexpect/expect.py", line 122, in eof
+    raise exc
+pexpect.exceptions.EOF: End Of File (EOF). Empty string style platform.
+<pexpect.pty_spawn.spawn object at 0x80141b750>
+command: /home/vagrant/.local/bin/make
+args: [b'/home/vagrant/.local/bin/make', b'cleanterm']
+buffer (last 100 chars): ''
+before (last 100 chars): ''
+after: <class 'pexpect.exceptions.EOF'>
+match: None
+match_index: None
+exitstatus: 2
+flag_eof: True
+pid: 7444
+child_fd: 6
+closed: False
+timeout: 1
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+searcher: searcher_string:
+    0: 'READY'
+    1: TIMEOUT
+make: *** [/home/vagrant/RIOT/tests/gnrc_netif_ieee802154/../../Makefile.include:770: test] Error 1
+
+Return value: 2

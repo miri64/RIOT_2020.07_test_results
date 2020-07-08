@@ -1,0 +1,23 @@
+r
+/home/vagrant/RIOT/tests/blob/bin/native/tests_blob.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Hello blob!
+
+Hello blob_subdir!
+
+0x00
+0x01
+0x02
+0x03
+0xFF
+

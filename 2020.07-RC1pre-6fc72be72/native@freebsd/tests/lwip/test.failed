@@ -1,0 +1,47 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/lwip test
+Testing for (<Board 'native',port='tap0',serial=None>, <Board 'native',port='tap1',serial=None>): 
+Traceback (most recent call last):
+  File "/home/vagrant/RIOT/tests/lwip/tests/01-run.py", line 365, in <module>
+    test_tcpv6_multiconnect, test_triple_send])
+  File "/home/vagrant/RIOT/tests/lwip/tests/01-run.py", line 181, in execute
+    test_case(board_group, self.app_dir, env=None)
+  File "/home/vagrant/RIOT/tests/lwip/tests/01-run.py", line 216, in test_ipv6_send
+    receiver.expect(u"00000000  01  23  45  67  89  AB  CD  EF")
+  File "/home/vagrant/.local/lib/python3.7/site-packages/pexpect/spawnbase.py", line 344, in expect
+    timeout, searchwindowsize, async_)
+  File "/home/vagrant/.local/lib/python3.7/site-packages/pexpect/spawnbase.py", line 372, in expect_list
+    return exp.expect_loop(timeout)
+  File "/home/vagrant/.local/lib/python3.7/site-packages/pexpect/expect.py", line 181, in expect_loop
+    return self.timeout(e)
+  File "/home/vagrant/.local/lib/python3.7/site-packages/pexpect/expect.py", line 144, in timeout
+    raise exc
+pexpect.exceptions.TIMEOUT: Timeout exceeded.
+<pexpect.pty_spawn.spawn object at 0x801b17c90>
+command: /home/vagrant/.local/bin/make
+args: [b'/home/vagrant/.local/bin/make', b'-C', b'/home/vagrant/RIOT/tests/lwip', b'term']
+buffer (last 100 chars): '\n\r\n> ip server start 107\r\nip server start 107\r\r\nSuccess: started IP server on protocol 107\r\n> '
+before (last 100 chars): '\n\r\n> ip server start 107\r\nip server start 107\r\r\nSuccess: started IP server on protocol 107\r\n> '
+after: <class 'pexpect.exceptions.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 23540
+child_fd: 6
+closed: False
+timeout: 5
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: None
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+searcher: searcher_re:
+    0: re.compile('00000000  01  23  45  67  89  AB  CD  EF')
+make: *** [/home/vagrant/RIOT/tests/lwip/../../Makefile.include:770: test] Error 1
+
+Return value: 2

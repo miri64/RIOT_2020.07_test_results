@@ -1,0 +1,15 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/gnrc_tcp clean all
+Building application "tests_gnrc_tcp" for "native" with MCU "native".
+
+/home/vagrant/RIOT/sys/net/gnrc/transport_layer/tcp/gnrc_tcp_pkt.c: In function '_pkt_acknowledge':
+/home/vagrant/RIOT/sys/net/gnrc/transport_layer/tcp/gnrc_tcp_pkt.c:430:17: error: 'ENODATA' undeclared (first use in this function)
+  430 |         return -ENODATA;
+      |                 ^~~~~~~
+/home/vagrant/RIOT/sys/net/gnrc/transport_layer/tcp/gnrc_tcp_pkt.c:430:17: note: each undeclared identifier is reported only once for each function it appears in
+gmake[4]: *** [/home/vagrant/RIOT/Makefile.base:108: /home/vagrant/RIOT/tests/gnrc_tcp/bin/native/gnrc_tcp/gnrc_tcp_pkt.o] Error 1
+gmake[3]: *** [/home/vagrant/RIOT/Makefile.base:30: ALL--/home/vagrant/RIOT/sys/net/gnrc/transport_layer/tcp] Error 2
+gmake[2]: *** [/home/vagrant/RIOT/Makefile.base:30: ALL--/home/vagrant/RIOT/sys/net/gnrc] Error 2
+gmake[1]: *** [/home/vagrant/RIOT/Makefile.base:30: ALL--/home/vagrant/RIOT/sys] Error 2
+make: *** [/home/vagrant/RIOT/tests/gnrc_tcp/../../Makefile.include:575: /home/vagrant/RIOT/tests/gnrc_tcp/bin/native/application_tests_gnrc_tcp.a] Error 2
+
+Return value: 2

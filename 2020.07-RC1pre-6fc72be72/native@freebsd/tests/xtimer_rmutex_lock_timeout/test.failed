@@ -1,0 +1,46 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/xtimer_rmutex_lock_timeout test
+
+
+/home/vagrant/RIOT/tests/xtimer_rmutex_lock_timeout/bin/native/tests_xtimer_rmutex_lock_timeout.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+> 
+> 
+> help
+t1
+help
+Command              Description
+---------------------------------------
+t1                   See main.c
+t2                   See main.c
+t3                   See main.c
+t4                   See main.c
+t5                   See main.c
+> t1
+OK
+
+> t2
+t2
+OK
+
+> t3
+t3
+OK
+
+> t4
+t4
+OK
+
+> t5
+t5
+Unexpected end of file in expect script at "child.expect("OK")" (tests/xtimer_rmutex_lock_timeout/tests/01-run.py:35)
+
+Process already stopped
+make: *** [/home/vagrant/RIOT/tests/xtimer_rmutex_lock_timeout/../../Makefile.include:770: test] Error 1
+
+Return value: 2

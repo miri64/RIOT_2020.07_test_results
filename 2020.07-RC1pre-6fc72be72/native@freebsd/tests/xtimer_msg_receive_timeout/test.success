@@ -1,0 +1,26 @@
+r
+/home/vagrant/RIOT/tests/xtimer_msg_receive_timeout/bin/native/tests_xtimer_msg_receive_timeout.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START]
+Message: 42
+Timeout!
+Message: 42
+Timeout!
+Message: 42
+Timeout!
+Message: 42
+Timeout!
+Message: 42
+Timeout!
+[SUCCESS]
+

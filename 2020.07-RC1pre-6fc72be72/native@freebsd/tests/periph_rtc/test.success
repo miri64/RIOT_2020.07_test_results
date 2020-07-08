@@ -1,0 +1,25 @@
+r
+/home/vagrant/RIOT/tests/periph_rtc/bin/native/tests_periph_rtc.elf 
+RIOT native interrupts/signals initialized.
+Native RTC initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+RIOT RTC low-level driver test
+This test will display 'Alarm!' every 2 seconds for 4 times
+  Setting clock to   2020-02-28 23:59:57
+/home/vagrant/RIOT/tests/periph_rtc/bin/native/tests_periph_rtc.elf: rtc_set_time: not implemented
+Clock value is now   2020-07-07 22:10:07
+  Setting alarm to   2020-07-07 22:10:09
+/home/vagrant/RIOT/tests/periph_rtc/bin/native/tests_periph_rtc.elf: rtc_set_alarm: not implemented
+   Alarm is set to   2020-07-07 22:10:09
+
+

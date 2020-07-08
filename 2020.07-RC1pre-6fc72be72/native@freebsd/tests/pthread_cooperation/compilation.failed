@@ -1,0 +1,362 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/pthread_cooperation clean all
+Building application "tests_pthread_cooperation" for "native" with MCU "native".
+
+In file included from /usr/include/sys/types.h:49,
+                 from /usr/include/malloc_np.h:37,
+                 from /usr/include/malloc.h:6,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:35:
+/usr/include/sys/_pthreadtypes.h:67:27: error: conflicting types for 'pthread_t'
+   67 | typedef struct pthread   *pthread_t;
+      |                           ^~~~~~~~~
+In file included from /home/vagrant/RIOT/sys/posix/pthread/include/pthread.h:39,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:32:
+/home/vagrant/RIOT/sys/posix/pthread/include/pthread_threading.h:30:18: note: previous declaration of 'pthread_t' was here
+   30 | typedef unsigned pthread_t;
+      |                  ^~~~~~~~~
+In file included from /usr/include/sys/types.h:49,
+                 from /usr/include/malloc_np.h:37,
+                 from /usr/include/malloc.h:6,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:35:
+/usr/include/sys/_pthreadtypes.h:70:31: error: conflicting types for 'pthread_attr_t'
+   70 | typedef struct pthread_attr  *pthread_attr_t;
+      |                               ^~~~~~~~~~~~~~
+In file included from /home/vagrant/RIOT/sys/posix/pthread/include/pthread.h:38,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:32:
+/home/vagrant/RIOT/sys/posix/pthread/include/pthread_threading_attr.h:34:3: note: previous declaration of 'pthread_attr_t' was here
+   34 | } pthread_attr_t;
+      |   ^~~~~~~~~~~~~~
+In file included from /usr/include/sys/types.h:49,
+                 from /usr/include/malloc_np.h:37,
+                 from /usr/include/malloc.h:6,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:35:
+/usr/include/sys/_pthreadtypes.h:71:32: error: conflicting types for 'pthread_mutex_t'
+   71 | typedef struct pthread_mutex  *pthread_mutex_t;
+      |                                ^~~~~~~~~~~~~~~
+In file included from /home/vagrant/RIOT/sys/posix/pthread/include/pthread.h:41,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:32:
+/home/vagrant/RIOT/sys/posix/pthread/include/pthread_mutex.h:33:17: note: previous declaration of 'pthread_mutex_t' was here
+   33 | typedef mutex_t pthread_mutex_t;
+      |                 ^~~~~~~~~~~~~~~
+In file included from /usr/include/sys/types.h:49,
+                 from /usr/include/malloc_np.h:37,
+                 from /usr/include/malloc.h:6,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:35:
+/usr/include/sys/_pthreadtypes.h:72:36: error: conflicting types for 'pthread_mutexattr_t'
+   72 | typedef struct pthread_mutex_attr *pthread_mutexattr_t;
+      |                                    ^~~~~~~~~~~~~~~~~~~
+In file included from /home/vagrant/RIOT/sys/posix/pthread/include/pthread.h:40,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:32:
+/home/vagrant/RIOT/sys/posix/pthread/include/pthread_mutex_attr.h:94:3: note: previous declaration of 'pthread_mutexattr_t' was here
+   94 | } pthread_mutexattr_t;
+      |   ^~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/sys/types.h:49,
+                 from /usr/include/malloc_np.h:37,
+                 from /usr/include/malloc.h:6,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:35:
+/usr/include/sys/_pthreadtypes.h:73:31: error: conflicting types for 'pthread_cond_t'
+   73 | typedef struct pthread_cond  *pthread_cond_t;
+      |                               ^~~~~~~~~~~~~~
+In file included from /home/vagrant/RIOT/sys/posix/pthread/include/pthread.h:50,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:32:
+/home/vagrant/RIOT/sys/posix/pthread/include/pthread_cond.h:60:3: note: previous declaration of 'pthread_cond_t' was here
+   60 | } pthread_cond_t;
+      |   ^~~~~~~~~~~~~~
+In file included from /usr/include/sys/types.h:49,
+                 from /usr/include/malloc_np.h:37,
+                 from /usr/include/malloc.h:6,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:35:
+/usr/include/sys/_pthreadtypes.h:74:35: error: conflicting types for 'pthread_condattr_t'
+   74 | typedef struct pthread_cond_attr *pthread_condattr_t;
+      |                                   ^~~~~~~~~~~~~~~~~~
+In file included from /home/vagrant/RIOT/sys/posix/pthread/include/pthread.h:50,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:32:
+/home/vagrant/RIOT/sys/posix/pthread/include/pthread_cond.h:51:3: note: previous declaration of 'pthread_condattr_t' was here
+   51 | } pthread_condattr_t;
+      |   ^~~~~~~~~~~~~~~~~~
+In file included from /usr/include/sys/types.h:49,
+                 from /usr/include/malloc_np.h:37,
+                 from /usr/include/malloc.h:6,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:35:
+/usr/include/sys/_pthreadtypes.h:75:20: error: conflicting types for 'pthread_key_t'
+   75 | typedef int        pthread_key_t;
+      |                    ^~~~~~~~~~~~~
+In file included from /home/vagrant/RIOT/sys/posix/pthread/include/pthread.h:51,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:32:
+/home/vagrant/RIOT/sys/posix/pthread/include/pthread_tls.h:40:35: note: previous declaration of 'pthread_key_t' was here
+   40 | typedef struct __pthread_tls_key *pthread_key_t;
+      |                                   ^~~~~~~~~~~~~
+In file included from /usr/include/sys/types.h:49,
+                 from /usr/include/malloc_np.h:37,
+                 from /usr/include/malloc.h:6,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:35:
+/usr/include/sys/_pthreadtypes.h:76:30: error: conflicting type qualifiers for 'pthread_once_t'
+   76 | typedef struct pthread_once  pthread_once_t;
+      |                              ^~~~~~~~~~~~~~
+In file included from /home/vagrant/RIOT/sys/posix/pthread/include/pthread.h:47,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:32:
+/home/vagrant/RIOT/sys/posix/pthread/include/pthread_once.h:27:22: note: previous declaration of 'pthread_once_t' was here
+   27 | typedef volatile int pthread_once_t;
+      |                      ^~~~~~~~~~~~~~
+In file included from /usr/include/sys/types.h:49,
+                 from /usr/include/malloc_np.h:37,
+                 from /usr/include/malloc.h:6,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:35:
+/usr/include/sys/_pthreadtypes.h:77:33: error: conflicting types for 'pthread_rwlock_t'
+   77 | typedef struct pthread_rwlock  *pthread_rwlock_t;
+      |                                 ^~~~~~~~~~~~~~~~
+In file included from /home/vagrant/RIOT/sys/posix/pthread/include/pthread.h:43,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:32:
+/home/vagrant/RIOT/sys/posix/pthread/include/pthread_rwlock.h:57:3: note: previous declaration of 'pthread_rwlock_t' was here
+   57 | } pthread_rwlock_t;
+      |   ^~~~~~~~~~~~~~~~
+In file included from /usr/include/sys/types.h:49,
+                 from /usr/include/malloc_np.h:37,
+                 from /usr/include/malloc.h:6,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:35:
+/usr/include/sys/_pthreadtypes.h:78:36: error: conflicting types for 'pthread_rwlockattr_t'
+   78 | typedef struct pthread_rwlockattr *pthread_rwlockattr_t;
+      |                                    ^~~~~~~~~~~~~~~~~~~~
+In file included from /home/vagrant/RIOT/sys/posix/pthread/include/pthread.h:42,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:32:
+/home/vagrant/RIOT/sys/posix/pthread/include/pthread_rwlock_attr.h:38:3: note: previous declaration of 'pthread_rwlockattr_t' was here
+   38 | } pthread_rwlockattr_t;
+      |   ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/sys/types.h:49,
+                 from /usr/include/malloc_np.h:37,
+                 from /usr/include/malloc.h:6,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:35:
+/usr/include/sys/_pthreadtypes.h:79:34: error: conflicting types for 'pthread_barrier_t'
+   79 | typedef struct pthread_barrier  *pthread_barrier_t;
+      |                                  ^~~~~~~~~~~~~~~~~
+In file included from /home/vagrant/RIOT/sys/posix/pthread/include/pthread.h:45,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:32:
+/home/vagrant/RIOT/sys/posix/pthread/include/pthread_barrier.h:62:3: note: previous declaration of 'pthread_barrier_t' was here
+   62 | } pthread_barrier_t;
+      |   ^~~~~~~~~~~~~~~~~
+In file included from /usr/include/sys/types.h:49,
+                 from /usr/include/malloc_np.h:37,
+                 from /usr/include/malloc.h:6,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:35:
+/usr/include/sys/_pthreadtypes.h:80:37: error: conflicting types for 'pthread_barrierattr_t'
+   80 | typedef struct pthread_barrierattr *pthread_barrierattr_t;
+      |                                     ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/vagrant/RIOT/sys/posix/pthread/include/pthread.h:45,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:32:
+/home/vagrant/RIOT/sys/posix/pthread/include/pthread_barrier.h:72:3: note: previous declaration of 'pthread_barrierattr_t' was here
+   72 | } pthread_barrierattr_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/sys/types.h:49,
+                 from /usr/include/malloc_np.h:37,
+                 from /usr/include/malloc.h:6,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:35:
+/usr/include/sys/_pthreadtypes.h:81:34: error: conflicting types for 'pthread_spinlock_t'
+   81 | typedef struct pthread_spinlock *pthread_spinlock_t;
+      |                                  ^~~~~~~~~~~~~~~~~~
+In file included from /home/vagrant/RIOT/sys/posix/pthread/include/pthread.h:44,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:32:
+/home/vagrant/RIOT/sys/posix/pthread/include/pthread_spin.h:38:3: note: previous declaration of 'pthread_spinlock_t' was here
+   38 | } pthread_spinlock_t;
+      |   ^~~~~~~~~~~~~~~~~~
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:123:5: error: conflicting types for 'pthread_create'
+  123 | int pthread_create(pthread_t *newthread, const pthread_attr_t *attr, void *(*start_routine)(void *), void *arg)
+      |     ^~~~~~~~~~~~~~
+In file included from /home/vagrant/RIOT/sys/posix/pthread/include/pthread.h:39,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:32:
+/home/vagrant/RIOT/sys/posix/pthread/include/pthread_threading.h:48:5: note: previous declaration of 'pthread_create' was here
+   48 | int pthread_create(pthread_t *newthread, const pthread_attr_t *attr, void *(*start_routine)(void *), void *arg);
+      |     ^~~~~~~~~~~~~~
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c: In function 'pthread_create':
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:136:16: error: assignment to 'pthread_t' {aka 'struct pthread *'} from 'kernel_pid_t' {aka 'short int'} makes pointer from integer without a cast [-Werror=int-conversion]
+  136 |     *newthread = pthread_pid;
+      |                ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:138:30: error: '*attr' is a pointer; did you mean to use '->'?
+  138 |     pt->status = attr && attr->detached ? PTS_DETACHED : PTS_RUNNING;
+      |                              ^~
+      |                              ->
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:142:41: error: '*attr' is a pointer; did you mean to use '->'?
+  142 |     bool autofree = attr == NULL || attr->ss_sp == NULL || attr->ss_size == 0;
+      |                                         ^~
+      |                                         ->
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:142:64: error: '*attr' is a pointer; did you mean to use '->'?
+  142 |     bool autofree = attr == NULL || attr->ss_sp == NULL || attr->ss_size == 0;
+      |                                                                ^~
+      |                                                                ->
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:143:37: error: '*attr' is a pointer; did you mean to use '->'?
+  143 |     size_t stack_size = attr && attr->ss_size > 0 ? attr->ss_size : PTHREAD_STACKSIZE;
+      |                                     ^~
+      |                                     ->
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:143:57: error: '*attr' is a pointer; did you mean to use '->'?
+  143 |     size_t stack_size = attr && attr->ss_size > 0 ? attr->ss_size : PTHREAD_STACKSIZE;
+      |                                                         ^~
+      |                                                         ->
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:144:55: error: '*attr' is a pointer; did you mean to use '->'?
+  144 |     void *stack = autofree ? malloc(stack_size) : attr->ss_sp;
+      |                                                       ^~
+      |                                                       ->
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c: In function 'pthread_exit':
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:197:25: error: initialization of 'pthread_t' {aka 'struct pthread *'} from 'pthread_t' {aka 'unsigned int'} makes pointer from integer without a cast [-Werror=int-conversion]
+  197 |     pthread_t self_id = pthread_self();
+      |                         ^~~~~~~~~~~~
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:203:64: error: invalid use of undefined type 'struct pthread'
+  203 |         pthread_thread_t *self = pthread_sched_threads[self_id - 1];
+      |                                                                ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:203:55: error: array subscript is not an integer
+  203 |         pthread_thread_t *self = pthread_sched_threads[self_id - 1];
+      |                                                       ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:215:33: error: passing argument 1 of '__pthread_keys_exit' makes integer from pointer without a cast [-Werror=int-conversion]
+  215 |             __pthread_keys_exit(self_id);
+      |                                 ^~~~~~~
+      |                                 |
+      |                                 pthread_t {aka struct pthread *}
+In file included from /home/vagrant/RIOT/sys/posix/pthread/include/pthread.h:51,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:32:
+/home/vagrant/RIOT/sys/posix/pthread/include/pthread_tls.h:78:30: note: expected 'int' but argument is of type 'pthread_t' {aka 'struct pthread *'}
+   78 | void __pthread_keys_exit(int self_id);
+      |                          ~~~~^~~~~~~
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c: At top level:
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:241:5: error: conflicting types for 'pthread_join'
+  241 | int pthread_join(pthread_t th, void **thread_return)
+      |     ^~~~~~~~~~~~
+In file included from /home/vagrant/RIOT/sys/posix/pthread/include/pthread.h:39,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:32:
+/home/vagrant/RIOT/sys/posix/pthread/include/pthread_threading.h:71:5: note: previous declaration of 'pthread_join' was here
+   71 | int pthread_join(pthread_t th, void **thread_return);
+      |     ^~~~~~~~~~~~
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c: In function 'pthread_join':
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:243:12: error: comparison between pointer and integer [-Werror]
+  243 |     if (th < 1 || th > MAXTHREADS) {
+      |            ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:243:22: error: comparison between pointer and integer [-Werror]
+  243 |     if (th < 1 || th > MAXTHREADS) {
+      |                      ^
+In file included from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:52:
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:244:15: error: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'struct pthread *'} [-Werror=format=]
+  244 |         DEBUG("passed pthread_t th (%d) exceeds bounds of pthread_sched_threads[] in \"%s\"!\n", th, __func__);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~
+      |                                                                                                  |
+      |                                                                                                  pthread_t {aka struct pthread *}
+/home/vagrant/RIOT/core/include/debug.h:52:20: note: in definition of macro 'DEBUG_PRINT'
+   52 |             printf(__VA_ARGS__); \
+      |                    ^~~~~~~~~~~
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:244:9: note: in expansion of macro 'DEBUG'
+  244 |         DEBUG("passed pthread_t th (%d) exceeds bounds of pthread_sched_threads[] in \"%s\"!\n", th, __func__);
+      |         ^~~~~
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:244:38: note: format string is defined here
+  244 |         DEBUG("passed pthread_t th (%d) exceeds bounds of pthread_sched_threads[] in \"%s\"!\n", th, __func__);
+      |                                     ~^
+      |                                      |
+      |                                      int
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:248:55: error: invalid use of undefined type 'struct pthread'
+  248 |     pthread_thread_t *other = pthread_sched_threads[th-1];
+      |                                                       ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:248:52: error: array subscript is not an integer
+  248 |     pthread_thread_t *other = pthread_sched_threads[th-1];
+      |                                                    ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:266:37: error: invalid use of undefined type 'struct pthread'
+  266 |             pthread_sched_threads[th-1] = NULL;
+      |                                     ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:266:34: error: array subscript is not an integer
+  266 |             pthread_sched_threads[th-1] = NULL;
+      |                                  ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c: At top level:
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:275:5: error: conflicting types for 'pthread_detach'
+  275 | int pthread_detach(pthread_t th)
+      |     ^~~~~~~~~~~~~~
+In file included from /home/vagrant/RIOT/sys/posix/pthread/include/pthread.h:39,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:32:
+/home/vagrant/RIOT/sys/posix/pthread/include/pthread_threading.h:86:5: note: previous declaration of 'pthread_detach' was here
+   86 | int pthread_detach(pthread_t th);
+      |     ^~~~~~~~~~~~~~
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c: In function 'pthread_detach':
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:277:12: error: comparison between pointer and integer [-Werror]
+  277 |     if (th < 1 || th > MAXTHREADS) {
+      |            ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:277:22: error: comparison between pointer and integer [-Werror]
+  277 |     if (th < 1 || th > MAXTHREADS) {
+      |                      ^
+In file included from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:52:
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:278:15: error: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'struct pthread *'} [-Werror=format=]
+  278 |         DEBUG("passed pthread_t th (%d) exceeds bounds of pthread_sched_threads[] in \"%s\"!\n", th, __func__);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~
+      |                                                                                                  |
+      |                                                                                                  pthread_t {aka struct pthread *}
+/home/vagrant/RIOT/core/include/debug.h:52:20: note: in definition of macro 'DEBUG_PRINT'
+   52 |             printf(__VA_ARGS__); \
+      |                    ^~~~~~~~~~~
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:278:9: note: in expansion of macro 'DEBUG'
+  278 |         DEBUG("passed pthread_t th (%d) exceeds bounds of pthread_sched_threads[] in \"%s\"!\n", th, __func__);
+      |         ^~~~~
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:278:38: note: format string is defined here
+  278 |         DEBUG("passed pthread_t th (%d) exceeds bounds of pthread_sched_threads[] in \"%s\"!\n", th, __func__);
+      |                                     ~^
+      |                                      |
+      |                                      int
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:282:55: error: invalid use of undefined type 'struct pthread'
+  282 |     pthread_thread_t *other = pthread_sched_threads[th-1];
+      |                                                       ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:282:52: error: array subscript is not an integer
+  282 |     pthread_thread_t *other = pthread_sched_threads[th-1];
+      |                                                    ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:291:33: error: invalid use of undefined type 'struct pthread'
+  291 |         pthread_sched_threads[th-1] = NULL;
+      |                                 ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:291:30: error: array subscript is not an integer
+  291 |         pthread_sched_threads[th-1] = NULL;
+      |                              ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c: At top level:
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:299:11: error: conflicting types for 'pthread_self'
+  299 | pthread_t pthread_self(void)
+      |           ^~~~~~~~~~~~
+In file included from /home/vagrant/RIOT/sys/posix/pthread/include/pthread.h:39,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:32:
+/home/vagrant/RIOT/sys/posix/pthread/include/pthread_threading.h:95:11: note: previous declaration of 'pthread_self' was here
+   95 | pthread_t pthread_self(void);
+      |           ^~~~~~~~~~~~
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c: In function 'pthread_self':
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:306:20: error: assignment to 'pthread_t' {aka 'struct pthread *'} from 'int' makes pointer from integer without a cast [-Werror=int-conversion]
+  306 |             result = i+1;
+      |                    ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c: At top level:
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:314:5: error: conflicting types for 'pthread_cancel'
+  314 | int pthread_cancel(pthread_t th)
+      |     ^~~~~~~~~~~~~~
+In file included from /home/vagrant/RIOT/sys/posix/pthread/include/pthread.h:49,
+                 from /home/vagrant/RIOT/sys/posix/pthread/pthread.c:32:
+/home/vagrant/RIOT/sys/posix/pthread/include/pthread_cancellation.h:60:5: note: previous declaration of 'pthread_cancel' was here
+   60 | int pthread_cancel(pthread_t th);
+      |     ^~~~~~~~~~~~~~
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c: In function 'pthread_cancel':
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:316:55: error: invalid use of undefined type 'struct pthread'
+  316 |     pthread_thread_t *other = pthread_sched_threads[th-1];
+      |                                                       ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:316:52: error: array subscript is not an integer
+  316 |     pthread_thread_t *other = pthread_sched_threads[th-1];
+      |                                                    ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c: In function 'pthread_testcancel':
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:349:35: error: invalid use of undefined type 'struct pthread'
+  349 |     if (pthread_sched_threads[self-1]->should_cancel) {
+      |                                   ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:349:30: error: array subscript is not an integer
+  349 |     if (pthread_sched_threads[self-1]->should_cancel) {
+      |                              ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c: In function '__pthread_cleanup_push':
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:363:59: error: invalid use of undefined type 'struct pthread'
+  363 |     pthread_thread_t *self = pthread_sched_threads[self_id-1];
+      |                                                           ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:363:51: error: array subscript is not an integer
+  363 |     pthread_thread_t *self = pthread_sched_threads[self_id-1];
+      |                                                   ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c: In function '__pthread_cleanup_pop':
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:377:59: error: invalid use of undefined type 'struct pthread'
+  377 |     pthread_thread_t *self = pthread_sched_threads[self_id-1];
+      |                                                           ^
+/home/vagrant/RIOT/sys/posix/pthread/pthread.c:377:51: error: array subscript is not an integer
+  377 |     pthread_thread_t *self = pthread_sched_threads[self_id-1];
+      |                                                   ^
+cc1: all warnings being treated as errors
+gmake[3]: *** [/home/vagrant/RIOT/Makefile.base:108: /home/vagrant/RIOT/tests/pthread_cooperation/bin/native/pthread/pthread.o] Error 1
+gmake[2]: *** [/home/vagrant/RIOT/Makefile.base:30: ALL--/home/vagrant/RIOT/sys/posix/pthread] Error 2
+gmake[1]: *** [/home/vagrant/RIOT/Makefile.base:30: ALL--/home/vagrant/RIOT/sys] Error 2
+make: *** [/home/vagrant/RIOT/tests/pthread_cooperation/../../Makefile.include:575: /home/vagrant/RIOT/tests/pthread_cooperation/bin/native/application_tests_pthread_cooperation.a] Error 2
+
+Return value: 2

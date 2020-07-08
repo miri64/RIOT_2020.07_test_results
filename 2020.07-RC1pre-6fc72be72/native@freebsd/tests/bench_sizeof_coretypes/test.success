@@ -1,0 +1,47 @@
+r
+/home/vagrant/RIOT/tests/bench_sizeof_coretypes/bin/native/tests_bench_sizeof_coretypes.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Sizeof RIOT core types
+
+                                size
+sizeof(cib_t):                   12
+sizeof(clist_node_t):             4
+sizeof(core_panic_t):             4
+sizeof(kernel_pid_t):             2
+sizeof(list_node_t):              4
+sizeof(mbox_t):                  24
+sizeof(msg_t):                    8
+sizeof(mutex_t):                  4
+sizeof(priority_queue_node_t):   12
+sizeof(priority_queue_t):         4
+sizeof(ringbuffer_t):            16
+sizeof(rmutex_t):                 8
+sizeof(thread_flags_t):           0   (not enabled)
+
+TCB (thread_t) details:         size  offset
+sizeof(thread_t):                52       -
+    tcb->sp                       4       0
+    tcb->status                   4       4
+    tcb->priority                 1       8
+    tcb->pid                      2      10
+    tcb->rq_entry                 4      12
+    tcb->wait_data                4      16
+    tcb->msg_waiters              4      20
+    tcb->msg_queue               12      24
+    tcb->msg_array                4      36
+    tcb->stack_start              4      40
+    tcb->name                     4      44
+    tcb->stack_size               4      48
+
+[SUCCESS]
+

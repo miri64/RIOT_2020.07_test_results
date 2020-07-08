@@ -1,0 +1,37 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/evtimer_msg test
+r
+/home/vagrant/RIOT/tests/evtimer_msg/bin/native/tests_evtimer_msg.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Testing generic evtimer
+This should list 2 items
+ev #1 offset=1000
+ev #2 offset=500
+This should list 4 items
+ev #1 offset=659
+ev #2 offset=341
+ev #3 offset=500
+ev #4 offset=2454
+Are the reception times of all 4 msgs close to the supposed values?
+At   3776 ms received msg 0: "#2 supposed to be 3773"
+
+Traceback (most recent call last):
+  File "/home/vagrant/RIOT/tests/evtimer_msg/tests/01-run.py", line 33, in <module>
+    sys.exit(run(testfunc))
+  File "/home/vagrant/RIOT/dist/pythonlibs/testrunner/__init__.py", line 30, in run
+    testfunc(child)
+  File "/home/vagrant/RIOT/tests/evtimer_msg/tests/01-run.py", line 26, in testfunc
+    assert(actual in range(expected - ACCEPTED_ERROR, expected + ACCEPTED_ERROR + 1))
+AssertionError
+make: *** [/home/vagrant/RIOT/tests/evtimer_msg/../../Makefile.include:770: test] Error 1
+
+Return value: 2

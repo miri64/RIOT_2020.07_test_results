@@ -1,0 +1,16 @@
+r
+/home/vagrant/RIOT/tests/gnrc_sock_neterr/bin/native/tests_gnrc_sock_neterr.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+SUCCESS: error code EHOSTUNREACH (65 == 65)
+SUCCESS: error code ENETUNREACH (51 == 51)
+

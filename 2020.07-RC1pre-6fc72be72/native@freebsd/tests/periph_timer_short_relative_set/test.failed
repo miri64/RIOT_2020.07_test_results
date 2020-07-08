@@ -1,0 +1,29 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/periph_timer_short_relative_set test
+r
+/home/vagrant/RIOT/tests/periph_timer_short_relative_set/bin/native/tests_periph_timer_short_relative_set.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+Test for peripheral TIMER short timer_set()
+
+This test tries timer_set() with decreasing intervals down to 0.
+You should see lines like 'interval <n> ok', followed by a success message.
+On failure, this test prints an error message.
+
+testing periph_timer 0, freq 1000000
+ERROR: too long delay, aborted after 1002 (TEST_MAX_DIFF=1000)
+TEST FAILED
+Timeout in expect script at "child.expect_exact('TEST SUCCEEDED')" (tests/periph_timer_short_relative_set/tests/01-run.py:14)
+
+make: *** [/home/vagrant/RIOT/tests/periph_timer_short_relative_set/../../Makefile.include:770: test] Error 1
+
+Return value: 2

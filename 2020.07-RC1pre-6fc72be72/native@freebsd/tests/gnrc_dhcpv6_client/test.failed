@@ -1,0 +1,6 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/gnrc_dhcpv6_client test
+/home/vagrant/RIOT/tests/gnrc_dhcpv6_client/dhcpv6_server.sh 61342 /home/vagrant/RIOT/tests/gnrc_dhcpv6_client/kea-dhcp6.conf
+make: /home/vagrant/RIOT/tests/gnrc_dhcpv6_client/dhcpv6_server.sh: No such file or directory
+make: *** [Makefile:43: dhcpv6_server] Error 127
+
+Return value: 2

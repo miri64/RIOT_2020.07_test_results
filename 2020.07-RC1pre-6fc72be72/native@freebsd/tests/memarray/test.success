@@ -1,0 +1,535 @@
+r
+/home/vagrant/RIOT/tests/memarray/bin/native/tests_memarray.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+MAX_NUMBER_BLOCKS: 10
+NUMBER_OF_LOOPS: 2
+NUMBER_OF_TESTS: 12
+Starting (10, 8)
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     
+	  - | isr_stack            | -        - |   - |   8192 (   -1) ( 8193) |  0x8054b00 |  0x8054b00
+	  1 | idle                 | pending  Q |  15 |   8192 (  776) ( 7416) |  0x80529c0 |  0x80546cc 
+	  2 | main                 | running  Q |   7 |  12288 ( 2952) ( 9336) |  0x804f9c0 |  0x80526cc 
+	    | SUM                  |            |     |  28672 ( 3728) (24944)
+LOOP #1:
+TEST #1:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 144
+	Free (0) 16 Bytes at 0x804f900, total 144
+	Free (1) 16 Bytes at 0x804f910, total 128
+	Free (2) 16 Bytes at 0x804f920, total 112
+	Free (3) 16 Bytes at 0x804f930, total 96
+	Free (4) 16 Bytes at 0x804f940, total 80
+	Free (5) 16 Bytes at 0x804f950, total 64
+	Free (6) 16 Bytes at 0x804f960, total 48
+	Free (7) 16 Bytes at 0x804f970, total 32
+	Free (8) 16 Bytes at 0x804f980, total 16
+	Free (9) 16 Bytes at 0x804f990, total 0
+TEST #2:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 144
+	Free (0) 16 Bytes at 0x804f990, total 144
+	Free (1) 16 Bytes at 0x804f980, total 128
+	Free (2) 16 Bytes at 0x804f970, total 112
+	Free (3) 16 Bytes at 0x804f960, total 96
+	Free (4) 16 Bytes at 0x804f950, total 80
+	Free (5) 16 Bytes at 0x804f940, total 64
+	Free (6) 16 Bytes at 0x804f930, total 48
+	Free (7) 16 Bytes at 0x804f920, total 32
+	Free (8) 16 Bytes at 0x804f910, total 16
+	Free (9) 16 Bytes at 0x804f900, total 0
+TEST #3:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 144
+	Free (0) 16 Bytes at 0x804f900, total 144
+	Free (1) 16 Bytes at 0x804f910, total 128
+	Free (2) 16 Bytes at 0x804f920, total 112
+	Free (3) 16 Bytes at 0x804f930, total 96
+	Free (4) 16 Bytes at 0x804f940, total 80
+	Free (5) 16 Bytes at 0x804f950, total 64
+	Free (6) 16 Bytes at 0x804f960, total 48
+	Free (7) 16 Bytes at 0x804f970, total 32
+	Free (8) 16 Bytes at 0x804f980, total 16
+	Free (9) 16 Bytes at 0x804f990, total 0
+TEST #4:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 144
+	Free (0) 16 Bytes at 0x804f990, total 144
+	Free (1) 16 Bytes at 0x804f980, total 128
+	Free (2) 16 Bytes at 0x804f970, total 112
+	Free (3) 16 Bytes at 0x804f960, total 96
+	Free (4) 16 Bytes at 0x804f950, total 80
+	Free (5) 16 Bytes at 0x804f940, total 64
+	Free (6) 16 Bytes at 0x804f930, total 48
+	Free (7) 16 Bytes at 0x804f920, total 32
+	Free (8) 16 Bytes at 0x804f910, total 16
+	Free (9) 16 Bytes at 0x804f900, total 0
+TEST #5:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 144
+	Free (0) 16 Bytes at 0x804f900, total 144
+	Free (1) 16 Bytes at 0x804f910, total 128
+	Free (2) 16 Bytes at 0x804f920, total 112
+	Free (3) 16 Bytes at 0x804f930, total 96
+	Free (4) 16 Bytes at 0x804f940, total 80
+	Free (5) 16 Bytes at 0x804f950, total 64
+	Free (6) 16 Bytes at 0x804f960, total 48
+	Free (7) 16 Bytes at 0x804f970, total 32
+	Free (8) 16 Bytes at 0x804f980, total 16
+	Free (9) 16 Bytes at 0x804f990, total 0
+TEST #6:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 144
+	Free (0) 16 Bytes at 0x804f990, total 144
+	Free (1) 16 Bytes at 0x804f980, total 128
+	Free (2) 16 Bytes at 0x804f970, total 112
+	Free (3) 16 Bytes at 0x804f960, total 96
+	Free (4) 16 Bytes at 0x804f950, total 80
+	Free (5) 16 Bytes at 0x804f940, total 64
+	Free (6) 16 Bytes at 0x804f930, total 48
+	Free (7) 16 Bytes at 0x804f920, total 32
+	Free (8) 16 Bytes at 0x804f910, total 16
+	Free (9) 16 Bytes at 0x804f900, total 0
+TEST #7:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 144
+	Free (0) 16 Bytes at 0x804f900, total 144
+	Free (1) 16 Bytes at 0x804f910, total 128
+	Free (2) 16 Bytes at 0x804f920, total 112
+	Free (3) 16 Bytes at 0x804f930, total 96
+	Free (4) 16 Bytes at 0x804f940, total 80
+	Free (5) 16 Bytes at 0x804f950, total 64
+	Free (6) 16 Bytes at 0x804f960, total 48
+	Free (7) 16 Bytes at 0x804f970, total 32
+	Free (8) 16 Bytes at 0x804f980, total 16
+	Free (9) 16 Bytes at 0x804f990, total 0
+TEST #8:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 144
+	Free (0) 16 Bytes at 0x804f990, total 144
+	Free (1) 16 Bytes at 0x804f980, total 128
+	Free (2) 16 Bytes at 0x804f970, total 112
+	Free (3) 16 Bytes at 0x804f960, total 96
+	Free (4) 16 Bytes at 0x804f950, total 80
+	Free (5) 16 Bytes at 0x804f940, total 64
+	Free (6) 16 Bytes at 0x804f930, total 48
+	Free (7) 16 Bytes at 0x804f920, total 32
+	Free (8) 16 Bytes at 0x804f910, total 16
+	Free (9) 16 Bytes at 0x804f900, total 0
+TEST #9:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 144
+	Free (0) 16 Bytes at 0x804f900, total 144
+	Free (1) 16 Bytes at 0x804f910, total 128
+	Free (2) 16 Bytes at 0x804f920, total 112
+	Free (3) 16 Bytes at 0x804f930, total 96
+	Free (4) 16 Bytes at 0x804f940, total 80
+	Free (5) 16 Bytes at 0x804f950, total 64
+	Free (6) 16 Bytes at 0x804f960, total 48
+	Free (7) 16 Bytes at 0x804f970, total 32
+	Free (8) 16 Bytes at 0x804f980, total 16
+	Free (9) 16 Bytes at 0x804f990, total 0
+TEST #10:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 144
+	Free (0) 16 Bytes at 0x804f990, total 144
+	Free (1) 16 Bytes at 0x804f980, total 128
+	Free (2) 16 Bytes at 0x804f970, total 112
+	Free (3) 16 Bytes at 0x804f960, total 96
+	Free (4) 16 Bytes at 0x804f950, total 80
+	Free (5) 16 Bytes at 0x804f940, total 64
+	Free (6) 16 Bytes at 0x804f930, total 48
+	Free (7) 16 Bytes at 0x804f920, total 32
+	Free (8) 16 Bytes at 0x804f910, total 16
+	Free (9) 16 Bytes at 0x804f900, total 0
+TEST #11:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 144
+	Free (0) 16 Bytes at 0x804f900, total 144
+	Free (1) 16 Bytes at 0x804f910, total 128
+	Free (2) 16 Bytes at 0x804f920, total 112
+	Free (3) 16 Bytes at 0x804f930, total 96
+	Free (4) 16 Bytes at 0x804f940, total 80
+	Free (5) 16 Bytes at 0x804f950, total 64
+	Free (6) 16 Bytes at 0x804f960, total 48
+	Free (7) 16 Bytes at 0x804f970, total 32
+	Free (8) 16 Bytes at 0x804f980, total 16
+	Free (9) 16 Bytes at 0x804f990, total 0
+TEST #12:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 144
+	Free (0) 16 Bytes at 0x804f990, total 144
+	Free (1) 16 Bytes at 0x804f980, total 128
+	Free (2) 16 Bytes at 0x804f970, total 112
+	Free (3) 16 Bytes at 0x804f960, total 96
+	Free (4) 16 Bytes at 0x804f950, total 80
+	Free (5) 16 Bytes at 0x804f940, total 64
+	Free (6) 16 Bytes at 0x804f930, total 48
+	Free (7) 16 Bytes at 0x804f920, total 32
+	Free (8) 16 Bytes at 0x804f910, total 16
+	Free (9) 16 Bytes at 0x804f900, total 0
+LOOP #2:
+TEST #1:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 144
+	Free (0) 16 Bytes at 0x804f900, total 144
+	Free (1) 16 Bytes at 0x804f910, total 128
+	Free (2) 16 Bytes at 0x804f920, total 112
+	Free (3) 16 Bytes at 0x804f930, total 96
+	Free (4) 16 Bytes at 0x804f940, total 80
+	Free (5) 16 Bytes at 0x804f950, total 64
+	Free (6) 16 Bytes at 0x804f960, total 48
+	Free (7) 16 Bytes at 0x804f970, total 32
+	Free (8) 16 Bytes at 0x804f980, total 16
+	Free (9) 16 Bytes at 0x804f990, total 0
+TEST #2:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 144
+	Free (0) 16 Bytes at 0x804f900, total 144
+	Free (1) 16 Bytes at 0x804f910, total 128
+	Free (2) 16 Bytes at 0x804f920, total 112
+	Free (3) 16 Bytes at 0x804f930, total 96
+	Free (4) 16 Bytes at 0x804f940, total 80
+	Free (5) 16 Bytes at 0x804f950, total 64
+	Free (6) 16 Bytes at 0x804f960, total 48
+	Free (7) 16 Bytes at 0x804f970, total 32
+	Free (8) 16 Bytes at 0x804f980, total 16
+	Free (9) 16 Bytes at 0x804f990, total 0
+TEST #3:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 144
+	Free (0) 16 Bytes at 0x804f900, total 144
+	Free (1) 16 Bytes at 0x804f910, total 128
+	Free (2) 16 Bytes at 0x804f920, total 112
+	Free (3) 16 Bytes at 0x804f930, total 96
+	Free (4) 16 Bytes at 0x804f940, total 80
+	Free (5) 16 Bytes at 0x804f950, total 64
+	Free (6) 16 Bytes at 0x804f960, total 48
+	Free (7) 16 Bytes at 0x804f970, total 32
+	Free (8) 16 Bytes at 0x804f980, total 16
+	Free (9) 16 Bytes at 0x804f990, total 0
+TEST #4:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 144
+	Free (0) 16 Bytes at 0x804f900, total 144
+	Free (1) 16 Bytes at 0x804f910, total 128
+	Free (2) 16 Bytes at 0x804f920, total 112
+	Free (3) 16 Bytes at 0x804f930, total 96
+	Free (4) 16 Bytes at 0x804f940, total 80
+	Free (5) 16 Bytes at 0x804f950, total 64
+	Free (6) 16 Bytes at 0x804f960, total 48
+	Free (7) 16 Bytes at 0x804f970, total 32
+	Free (8) 16 Bytes at 0x804f980, total 16
+	Free (9) 16 Bytes at 0x804f990, total 0
+TEST #5:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 144
+	Free (0) 16 Bytes at 0x804f900, total 144
+	Free (1) 16 Bytes at 0x804f910, total 128
+	Free (2) 16 Bytes at 0x804f920, total 112
+	Free (3) 16 Bytes at 0x804f930, total 96
+	Free (4) 16 Bytes at 0x804f940, total 80
+	Free (5) 16 Bytes at 0x804f950, total 64
+	Free (6) 16 Bytes at 0x804f960, total 48
+	Free (7) 16 Bytes at 0x804f970, total 32
+	Free (8) 16 Bytes at 0x804f980, total 16
+	Free (9) 16 Bytes at 0x804f990, total 0
+TEST #6:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 144
+	Free (0) 16 Bytes at 0x804f900, total 144
+	Free (1) 16 Bytes at 0x804f910, total 128
+	Free (2) 16 Bytes at 0x804f920, total 112
+	Free (3) 16 Bytes at 0x804f930, total 96
+	Free (4) 16 Bytes at 0x804f940, total 80
+	Free (5) 16 Bytes at 0x804f950, total 64
+	Free (6) 16 Bytes at 0x804f960, total 48
+	Free (7) 16 Bytes at 0x804f970, total 32
+	Free (8) 16 Bytes at 0x804f980, total 16
+	Free (9) 16 Bytes at 0x804f990, total 0
+TEST #7:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 144
+	Free (0) 16 Bytes at 0x804f900, total 144
+	Free (1) 16 Bytes at 0x804f910, total 128
+	Free (2) 16 Bytes at 0x804f920, total 112
+	Free (3) 16 Bytes at 0x804f930, total 96
+	Free (4) 16 Bytes at 0x804f940, total 80
+	Free (5) 16 Bytes at 0x804f950, total 64
+	Free (6) 16 Bytes at 0x804f960, total 48
+	Free (7) 16 Bytes at 0x804f970, total 32
+	Free (8) 16 Bytes at 0x804f980, total 16
+	Free (9) 16 Bytes at 0x804f990, total 0
+TEST #8:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 144
+	Free (0) 16 Bytes at 0x804f900, total 144
+	Free (1) 16 Bytes at 0x804f910, total 128
+	Free (2) 16 Bytes at 0x804f920, total 112
+	Free (3) 16 Bytes at 0x804f930, total 96
+	Free (4) 16 Bytes at 0x804f940, total 80
+	Free (5) 16 Bytes at 0x804f950, total 64
+	Free (6) 16 Bytes at 0x804f960, total 48
+	Free (7) 16 Bytes at 0x804f970, total 32
+	Free (8) 16 Bytes at 0x804f980, total 16
+	Free (9) 16 Bytes at 0x804f990, total 0
+TEST #9:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 144
+	Free (0) 16 Bytes at 0x804f900, total 144
+	Free (1) 16 Bytes at 0x804f910, total 128
+	Free (2) 16 Bytes at 0x804f920, total 112
+	Free (3) 16 Bytes at 0x804f930, total 96
+	Free (4) 16 Bytes at 0x804f940, total 80
+	Free (5) 16 Bytes at 0x804f950, total 64
+	Free (6) 16 Bytes at 0x804f960, total 48
+	Free (7) 16 Bytes at 0x804f970, total 32
+	Free (8) 16 Bytes at 0x804f980, total 16
+	Free (9) 16 Bytes at 0x804f990, total 0
+TEST #10:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 144
+	Free (0) 16 Bytes at 0x804f900, total 144
+	Free (1) 16 Bytes at 0x804f910, total 128
+	Free (2) 16 Bytes at 0x804f920, total 112
+	Free (3) 16 Bytes at 0x804f930, total 96
+	Free (4) 16 Bytes at 0x804f940, total 80
+	Free (5) 16 Bytes at 0x804f950, total 64
+	Free (6) 16 Bytes at 0x804f960, total 48
+	Free (7) 16 Bytes at 0x804f970, total 32
+	Free (8) 16 Bytes at 0x804f980, total 16
+	Free (9) 16 Bytes at 0x804f990, total 0
+TEST #11:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 144
+	Free (0) 16 Bytes at 0x804f900, total 144
+	Free (1) 16 Bytes at 0x804f910, total 128
+	Free (2) 16 Bytes at 0x804f920, total 112
+	Free (3) 16 Bytes at 0x804f930, total 96
+	Free (4) 16 Bytes at 0x804f940, total 80
+	Free (5) 16 Bytes at 0x804f950, total 64
+	Free (6) 16 Bytes at 0x804f960, total 48
+	Free (7) 16 Bytes at 0x804f970, total 32
+	Free (8) 16 Bytes at 0x804f980, total 16
+	Free (9) 16 Bytes at 0x804f990, total 0
+TEST #12:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x804f900, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x804f910, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x804f920, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x804f930, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x804f940, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x804f950, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x804f960, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x804f970, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x804f980, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x804f990, total 144
+	Free (0) 16 Bytes at 0x804f900, total 144
+	Free (1) 16 Bytes at 0x804f910, total 128
+	Free (2) 16 Bytes at 0x804f920, total 112
+	Free (3) 16 Bytes at 0x804f930, total 96
+	Free (4) 16 Bytes at 0x804f940, total 80
+	Free (5) 16 Bytes at 0x804f950, total 64
+	Free (6) 16 Bytes at 0x804f960, total 48
+	Free (7) 16 Bytes at 0x804f970, total 32
+	Free (8) 16 Bytes at 0x804f980, total 16
+	Free (9) 16 Bytes at 0x804f990, total 0
+Finishing
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     
+	  - | isr_stack            | -        - |   - |   8192 (   -1) ( 8193) |  0x8054b00 |  0x8054b00
+	  1 | idle                 | pending  Q |  15 |   8192 (  776) ( 7416) |  0x80529c0 |  0x80546cc 
+	  2 | main                 | running  Q |   7 |  12288 ( 2952) ( 9336) |  0x804f9c0 |  0x80526cc 
+	    | SUM                  |            |     |  28672 ( 3728) (24944)
+

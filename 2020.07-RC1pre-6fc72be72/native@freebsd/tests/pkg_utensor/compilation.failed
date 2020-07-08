@@ -1,0 +1,14 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/pkg_utensor clean all
+rm -rf /home/vagrant/RIOT/tests/pkg_utensor/bin/native/pkg-build/utensor
+Building application "tests_pkg_utensor" for "native" with MCU "native".
+
+"gmake" -C /home/vagrant/RIOT/build/pkg/utensor/src/uTensor/core -f /home/vagrant/RIOT/pkg/utensor/Makefile.utensor
+"gmake" -C /home/vagrant/RIOT/build/pkg/utensor/src/uTensor/util -f /home/vagrant/RIOT/pkg/utensor/Makefile.utensor.util
+"gmake" -C /home/vagrant/RIOT/build/pkg/utensor/src/uTensor/ops -f /home/vagrant/RIOT/pkg/utensor/Makefile.utensor.ops
+/usr/local/bin/ld: skipping incompatible /usr/local/lib/gcc9/gcc/x86_64-portbld-freebsd12.1/9.3.0/../../../libstdc++.so when searching for -lstdc++
+/usr/local/bin/ld: skipping incompatible /usr/local/lib/gcc9/gcc/x86_64-portbld-freebsd12.1/9.3.0/../../../libstdc++.a when searching for -lstdc++
+/usr/local/bin/ld: cannot find -lstdc++
+collect2: error: ld returned 1 exit status
+make: *** [/home/vagrant/RIOT/tests/pkg_utensor/../../Makefile.include:572: /home/vagrant/RIOT/tests/pkg_utensor/bin/native/tests_pkg_utensor.elf] Error 1
+
+Return value: 2

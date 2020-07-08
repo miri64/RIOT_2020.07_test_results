@@ -1,0 +1,23 @@
+r
+/home/vagrant/RIOT/tests/eepreg/bin/native/tests_eepreg.elf --eeprom /home/vagrant/RIOT/tests/eepreg/bin/native/native.eeprom 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+EEPROM registry (eepreg) test routine
+Testing new registry creation: reset check [SUCCESS]
+Testing writing and reading entries: add write add read [SUCCESS]
+Testing detection of conflicting size: add [SUCCESS]
+Testing calculation of lengths: len len [SUCCESS]
+Testing of successful data move after rm: rm read data [SUCCESS]
+Testing of free space change after write: free add free [SUCCESS]
+Testing of iteration over registry: iter bar foo [SUCCESS]
+Tests complete!
+

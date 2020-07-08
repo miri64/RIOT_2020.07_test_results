@@ -1,0 +1,35 @@
+r
+/home/vagrant/RIOT/tests/events/bin/native/tests_events.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START] event test application.
+
+initializing detached event queue 0x8056564
+posting 0x805182c
+posting 0x8051834
+running thread that will claim event queue 0x8056564
+claiming event queue 0x8056564
+launching event queue 0x8056564
+triggered delayed event 0x805182c
+triggered delayed event 0x8051834
+posting 0x0805181c
+posting 0x08051824
+canceling 0x08051824
+posting custom event
+posting timed callback with timeout 1sec
+posting timed callback with timeout 0.5sec and canceling it again
+launching event queue
+triggered 0x0805181c
+triggered custom event with text: "CUSTOM CALLBACK"
+triggered timed callback with arg 0x12345678 after 1029457us
+[SUCCESS]
+

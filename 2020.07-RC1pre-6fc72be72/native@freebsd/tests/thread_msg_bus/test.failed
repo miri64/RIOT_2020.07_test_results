@@ -1,0 +1,27 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/thread_msg_bus test
+r
+/home/vagrant/RIOT/tests/thread_msg_bus/bin/native/tests_thread_msg_bus.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+THREAD 1 start
+THREAD 2 start
+THREAD 3 start
+THREADS CREATED
+Posted event 22 to 0 threads
+T1 recv: Hello Threads! (type=23)
+T3 recv: Hello Threads! (type=23)
+Unexpected end of file in expect script at "child.expect_exact('Posted event 23 to 2 threads')" (tests/thread_msg_bus/tests/01-run.py:17)
+
+Process already stopped
+make: *** [/home/vagrant/RIOT/tests/thread_msg_bus/../../Makefile.include:770: test] Error 1
+
+Return value: 2

@@ -1,0 +1,16 @@
+r
+/home/vagrant/RIOT/tests/trace/bin/native/tests_trace.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+n=   0 t=  3145759 v=0x00000000
+n=   1 t=+       8 v=0x00000001
+

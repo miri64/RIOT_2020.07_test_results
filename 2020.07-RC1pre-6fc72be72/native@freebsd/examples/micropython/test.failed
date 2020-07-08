@@ -1,0 +1,65 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/examples/micropython test
+/home/vagrant/RIOT/examples/micropython/bin/native/micropython.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+-- Executing boot.py
+boot.py: MicroPython says hello!
+-- boot.py exited. Starting REPL..
+MicroPython v1.4.2-6568-gbb8e51f6d on 2020-07-07; riot-native with native
+Type "help()" for more information.
+>>> print("echo this! " * 4)
+print("echo this! " * 4)
+echo this! echo this! echo this! echo this! 
+>>> import riot
+print(riot.thread_getpid())
+import riot
+>>> print(riot.thread_getpid())
+2
+>>> import utime
+import utime
+>>> utime.time()
+utime.time()
+3288
+>>> utime.sleep_ms(0)
+utime.sleep_ms(0)
+>>> utime.time()
+utime.time()
+3397
+>>> test_sleep(0, 1000): slept 109ms
+utime.time()
+utime.time()
+3451
+>>> utime.sleep_ms(50)
+utime.sleep_ms(50)
+>>> utime.time()
+utime.time()
+3613
+>>> test_sleep(50, 119): slept 162ms
+utime.time()
+utime.time()
+3668
+>>> utime.sleep_ms(250)
+utime.sleep_ms(250)
+>>> utime.time()
+utime.time()
+4042
+>>> test_sleep(250, 119): slept 374ms
+
+Traceback (most recent call last):
+  File "/home/vagrant/RIOT/examples/micropython/tests/01-run.py", line 84, in <module>
+    sys.exit(run(testfunc))
+  File "/home/vagrant/RIOT/dist/pythonlibs/testrunner/__init__.py", line 30, in run
+    testfunc(child)
+  File "/home/vagrant/RIOT/examples/micropython/tests/01-run.py", line 50, in testfunc
+    test_sleep(250, slack)
+  File "/home/vagrant/RIOT/examples/micropython/tests/01-run.py", line 43, in test_sleep
+    assert duration > t and duration < (t + slack)
+AssertionError
+make: *** [/home/vagrant/RIOT/examples/micropython/../../Makefile.include:770: test] Error 1
+
+Return value: 2

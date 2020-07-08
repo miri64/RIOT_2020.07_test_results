@@ -1,0 +1,20 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/pkg_minmea clean all
+rm -rf /home/vagrant/RIOT/tests/pkg_minmea/bin/native/pkg-build/minmea
+Building application "tests_pkg_minmea" for "native" with MCU "native".
+
+"gmake" -C /home/vagrant/RIOT/build/pkg/minmea -f /home/vagrant/RIOT/pkg/minmea/Makefile.minmea
+In file included from /home/vagrant/RIOT/build/pkg/minmea/minmea.c:9:
+/home/vagrant/RIOT/build/pkg/minmea/minmea.h: In function 'minmea_tofloat':
+/home/vagrant/RIOT/build/pkg/minmea/minmea.h:243:16: error: 'NAN' undeclared (first use in this function)
+  243 |         return NAN;
+      |                ^~~
+/home/vagrant/RIOT/build/pkg/minmea/minmea.h:243:16: note: each undeclared identifier is reported only once for each function it appears in
+/home/vagrant/RIOT/build/pkg/minmea/minmea.h: In function 'minmea_tocoord':
+/home/vagrant/RIOT/build/pkg/minmea/minmea.h:254:16: error: 'NAN' undeclared (first use in this function)
+  254 |         return NAN;
+      |                ^~~
+gmake[2]: *** [/home/vagrant/RIOT/Makefile.base:108: /home/vagrant/RIOT/tests/pkg_minmea/bin/native/minmea/minmea.o] Error 1
+gmake[1]: *** [Makefile:9: all] Error 2
+make: *** [/home/vagrant/RIOT/tests/pkg_minmea/../../Makefile.include:674: pkg-build-minmea] Error 2
+
+Return value: 2

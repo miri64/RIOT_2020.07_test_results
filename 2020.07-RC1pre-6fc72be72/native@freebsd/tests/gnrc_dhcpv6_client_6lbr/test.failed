@@ -1,0 +1,51 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/gnrc_dhcpv6_client_6lbr test
+
+
+/home/vagrant/RIOT/tests/gnrc_dhcpv6_client_6lbr/bin/native/tests_gnrc_dhcpv6_client_6lbr.elf -z [::1]:17754 tap0
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+DHCPv6: Selecting interface 7 as upstream
+main(): This is RIOT! (Version: buildtest)
+> 
+> 
+> Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/site-packages/scapy/sendrecv.py", line 842, in _run
+    *arg, **karg)] = iface
+  File "/usr/local/lib/python3.7/site-packages/scapy/arch/bpf/supersocket.py", line 239, in __init__
+    super(L2bpfListenSocket, self).__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/scapy/arch/bpf/supersocket.py", line 62, in __init__
+    (self.ins, self.dev_bpf) = get_dev_bpf()
+  File "/usr/local/lib/python3.7/site-packages/scapy/arch/bpf/core.py", line 115, in get_dev_bpf
+    raise Scapy_Exception("No /dev/bpf handle is available !")
+scapy.error.Scapy_Exception: No /dev/bpf handle is available !
+
+Exception ignored in: <function _L2bpfSocket.__del__ at 0x802713830>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scapy/arch/bpf/supersocket.py", line 136, in __del__
+    self.close()
+  File "/usr/local/lib/python3.7/site-packages/scapy/arch/bpf/supersocket.py", line 208, in close
+    if not self.closed and self.ins is not None:
+AttributeError: 'L2bpfListenSocket' object has no attribute 'ins'
+
+Traceback (most recent call last):
+  File "/home/vagrant/RIOT/tests/gnrc_dhcpv6_client_6lbr/tests/01-run.py", line 173, in <module>
+    sys.exit(run(testfunc, timeout=TIMEOUT, echo=True))
+  File "/home/vagrant/RIOT/dist/pythonlibs/testrunner/__init__.py", line 30, in run
+    testfunc(child)
+  File "/home/vagrant/RIOT/tests/gnrc_dhcpv6_client_6lbr/tests/01-run.py", line 114, in testfunc
+    pkt = wait_for_dhcpv6_pkt(iface)
+  File "/home/vagrant/RIOT/tests/gnrc_dhcpv6_client_6lbr/tests/01-run.py", line 95, in wait_for_dhcpv6_pkt
+    raise TimeoutError("Sniffing for DHCPv6 traffic timed out")
+TimeoutError: Sniffing for DHCPv6 traffic timed out
+make: *** [/home/vagrant/RIOT/tests/gnrc_dhcpv6_client_6lbr/../../Makefile.include:770: test] Error 1
+
+Return value: 2

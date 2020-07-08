@@ -1,0 +1,64 @@
+r
+/home/vagrant/RIOT/tests/phydat_dump/bin/native/tests_phydat_dump.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Visual phydat test application
+Data:	          12.34 °C
+Data:	          12.34 °F
+Data:	          123.4 K
+Data:	          123.4 lx
+Data:	[0]        1234 m
+	[1]       13456 m
+	[2]      -14567 m
+Data:	[0]      1234e1 m
+	[1]     13456e1 m
+	[2]    -14567e1 m
+Data:	[0]        1234 km
+	[1]       13456 km
+	[2]      -14567 km
+Data:	[0]       12.34 m
+	[1]      134.56 m
+	[2]     -145.67 m
+Data:	[0]        1234 mm
+	[1]       13456 mm
+	[2]      -14567 mm
+Data:	       -0.12345 m^2
+Data:	      -12345e-6 m^3
+Data:	[0]        0.12 g
+	[1]        0.34 g
+	[2]       56.78 g
+Data:	[0]         123 mdps
+	[1]         345 mdps
+	[2]         678 mdps
+Data:	         1234.5 G
+Data:	          12345 kA
+Data:	          12345 MV
+Data:	        12345e7 W
+Data:	         1234.5 Gs
+Data:	         12.345 dBm
+Data:	          12345 C
+Data:	          12345 uF
+Data:	       12345e-7 F
+Data:	         123.45 pH
+Data:	          12345 Bar
+Data:	          12345 hPa
+Data:	         123.45 cd
+Data:	          12345 mcts
+Data:	         12.345 %
+Data:	         1.2345 permille
+Data:	          12345 uppm
+Data:	          12345 nppb
+Data:	         1234.5 g/m^3
+Data:	         1234.5 #/m^3
+Data:	12:34:56
+Data:	2020-02-27
+

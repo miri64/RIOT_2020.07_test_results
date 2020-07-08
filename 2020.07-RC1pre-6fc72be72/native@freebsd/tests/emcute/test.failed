@@ -1,0 +1,21 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/emcute test
+
+Traceback (most recent call last):
+  File "/home/vagrant/RIOT/tests/emcute/tests/01-run.py", line 491, in <module>
+    sys.exit(run(testfunc, timeout=TIMEOUT, echo=False))
+  File "/home/vagrant/RIOT/dist/pythonlibs/testrunner/__init__.py", line 30, in run
+    testfunc(child)
+  File "/home/vagrant/RIOT/tests/emcute/tests/01-run.py", line 450, in testfunc
+    tap = get_bridge(os.environ["TAP"])
+  File "/home/vagrant/RIOT/tests/emcute/tests/01-run.py", line 424, in get_bridge
+    "command -v bridge", "^(.*bridge)", 1)
+  File "/home/vagrant/RIOT/tests/emcute/tests/01-run.py", line 414, in check_and_search_output
+    output = subprocess.check_output(cmd, *args, **kwargs).decode("utf-8")
+  File "/usr/local/lib/python3.7/subprocess.py", line 411, in check_output
+    **kwargs).stdout
+  File "/usr/local/lib/python3.7/subprocess.py", line 512, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'command -v bridge' returned non-zero exit status 127.
+make: *** [/home/vagrant/RIOT/tests/emcute/../../Makefile.include:770: test] Error 1
+
+Return value: 2

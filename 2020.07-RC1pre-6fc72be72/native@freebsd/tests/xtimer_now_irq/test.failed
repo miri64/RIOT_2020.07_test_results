@@ -1,0 +1,21 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/xtimer_now_irq test
+r
+/home/vagrant/RIOT/tests/xtimer_now_irq/bin/native/tests_xtimer_now_irq.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+xtimer_now_irq test application.
+
+Timeout in expect script at "child.expect_exact("OK", timeout=TIMEOUT)" (tests/xtimer_now_irq/tests/01-run.py:19)
+
+make: *** [/home/vagrant/RIOT/tests/xtimer_now_irq/../../Makefile.include:770: test] Error 1
+
+Return value: 2

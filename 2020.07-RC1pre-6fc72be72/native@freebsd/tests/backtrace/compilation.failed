@@ -1,0 +1,9 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/backtrace clean all
+Building application "tests_backtrace" for "native" with MCU "native".
+
+/usr/local/bin/ld: /home/vagrant/RIOT/tests/backtrace/bin/native/backtrace.a(backtrace.o): in function `backtrace_print':
+/home/vagrant/RIOT/cpu/native/backtrace/backtrace.c:27: undefined reference to `backtrace'
+collect2: error: ld returned 1 exit status
+make: *** [/home/vagrant/RIOT/tests/backtrace/../../Makefile.include:572: /home/vagrant/RIOT/tests/backtrace/bin/native/tests_backtrace.elf] Error 1
+
+Return value: 2

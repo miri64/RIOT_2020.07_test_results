@@ -1,0 +1,15 @@
+r
+/home/vagrant/RIOT/tests/riotboot_hdr/bin/native/tests_riotboot_hdr.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+....
+OK (4 tests)
+

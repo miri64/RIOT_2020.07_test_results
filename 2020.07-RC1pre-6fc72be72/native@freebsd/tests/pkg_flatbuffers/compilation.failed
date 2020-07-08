@@ -1,0 +1,89 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/vagrant/RIOT/tests/pkg_flatbuffers clean all
+rm -rf /home/vagrant/RIOT/tests/pkg_flatbuffers/bin/native/pkg-build/flatbuffers
+Building application "tests_pkg_flatbuffers" for "native" with MCU "native".
+
+[INFO] flatc binary not found - building it from source now
+gmake -C /home/vagrant/RIOT/dist/tools/flatc
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vagrant/RIOT/dist/tools/flatc/bin/build
+"gmake" -C "/home/vagrant/RIOT/dist/tools/flatc/bin/build"
+[  4%] Building CXX object CMakeFiles/flatc.dir/src/idl_parser.cpp.o
+In file included from /home/vagrant/RIOT/dist/tools/flatc/bin/src/idl_parser.cpp:23:
+In file included from /home/vagrant/RIOT/dist/tools/flatc/bin/include/flatbuffers/idl.h:25:
+/home/vagrant/RIOT/dist/tools/flatc/bin/include/flatbuffers/flatbuffers.h:1720:25: error: definition of implicit copy constructor for 'TableKeyComparator<reflection::Object>' is deprecated because it has a user-declared copy assignment operator [-Werror,-Wdeprecated-copy]
+    TableKeyComparator &operator=(const TableKeyComparator &);
+                        ^
+/home/vagrant/RIOT/dist/tools/flatc/bin/include/flatbuffers/flatbuffers.h:1735:27: note: in implicit copy constructor for 'flatbuffers::FlatBufferBuilder::TableKeyComparator<reflection::Object>' first required here
+    std::sort(v, v + len, TableKeyComparator<T>(buf_));
+                          ^
+/home/vagrant/RIOT/dist/tools/flatc/bin/include/flatbuffers/flatbuffers.h:1749:12: note: in instantiation of function template specialization 'flatbuffers::FlatBufferBuilder::CreateVectorOfSortedTables<reflection::Object>' requested here
+    return CreateVectorOfSortedTables(data(*v), v->size());
+           ^
+/home/vagrant/RIOT/dist/tools/flatc/bin/src/idl_parser.cpp:2730:26: note: in instantiation of function template specialization 'flatbuffers::FlatBufferBuilder::CreateVectorOfSortedTables<reflection::Object>' requested here
+  auto objs__ = builder_.CreateVectorOfSortedTables(&object_offsets);
+                         ^
+In file included from /home/vagrant/RIOT/dist/tools/flatc/bin/src/idl_parser.cpp:23:
+In file included from /home/vagrant/RIOT/dist/tools/flatc/bin/include/flatbuffers/idl.h:25:
+/home/vagrant/RIOT/dist/tools/flatc/bin/include/flatbuffers/flatbuffers.h:1720:25: error: definition of implicit copy constructor for 'TableKeyComparator<reflection::Enum>' is deprecated because it has a user-declared copy assignment operator [-Werror,-Wdeprecated-copy]
+    TableKeyComparator &operator=(const TableKeyComparator &);
+                        ^
+/home/vagrant/RIOT/dist/tools/flatc/bin/include/flatbuffers/flatbuffers.h:1735:27: note: in implicit copy constructor for 'flatbuffers::FlatBufferBuilder::TableKeyComparator<reflection::Enum>' first required here
+    std::sort(v, v + len, TableKeyComparator<T>(buf_));
+                          ^
+/home/vagrant/RIOT/dist/tools/flatc/bin/include/flatbuffers/flatbuffers.h:1749:12: note: in instantiation of function template specialization 'flatbuffers::FlatBufferBuilder::CreateVectorOfSortedTables<reflection::Enum>' requested here
+    return CreateVectorOfSortedTables(data(*v), v->size());
+           ^
+/home/vagrant/RIOT/dist/tools/flatc/bin/src/idl_parser.cpp:2731:26: note: in instantiation of function template specialization 'flatbuffers::FlatBufferBuilder::CreateVectorOfSortedTables<reflection::Enum>' requested here
+  auto enum__ = builder_.CreateVectorOfSortedTables(&enum_offsets);
+                         ^
+In file included from /home/vagrant/RIOT/dist/tools/flatc/bin/src/idl_parser.cpp:23:
+In file included from /home/vagrant/RIOT/dist/tools/flatc/bin/include/flatbuffers/idl.h:25:
+/home/vagrant/RIOT/dist/tools/flatc/bin/include/flatbuffers/flatbuffers.h:1720:25: error: definition of implicit copy constructor for 'TableKeyComparator<reflection::Service>' is deprecated because it has a user-declared copy assignment operator [-Werror,-Wdeprecated-copy]
+    TableKeyComparator &operator=(const TableKeyComparator &);
+                        ^
+/home/vagrant/RIOT/dist/tools/flatc/bin/include/flatbuffers/flatbuffers.h:1735:27: note: in implicit copy constructor for 'flatbuffers::FlatBufferBuilder::TableKeyComparator<reflection::Service>' first required here
+    std::sort(v, v + len, TableKeyComparator<T>(buf_));
+                          ^
+/home/vagrant/RIOT/dist/tools/flatc/bin/include/flatbuffers/flatbuffers.h:1749:12: note: in instantiation of function template specialization 'flatbuffers::FlatBufferBuilder::CreateVectorOfSortedTables<reflection::Service>' requested here
+    return CreateVectorOfSortedTables(data(*v), v->size());
+           ^
+/home/vagrant/RIOT/dist/tools/flatc/bin/src/idl_parser.cpp:2734:26: note: in instantiation of function template specialization 'flatbuffers::FlatBufferBuilder::CreateVectorOfSortedTables<reflection::Service>' requested here
+  auto serv__ = builder_.CreateVectorOfSortedTables(&service_offsets);
+                         ^
+In file included from /home/vagrant/RIOT/dist/tools/flatc/bin/src/idl_parser.cpp:23:
+In file included from /home/vagrant/RIOT/dist/tools/flatc/bin/include/flatbuffers/idl.h:25:
+/home/vagrant/RIOT/dist/tools/flatc/bin/include/flatbuffers/flatbuffers.h:1720:25: error: definition of implicit copy constructor for 'TableKeyComparator<reflection::Field>' is deprecated because it has a user-declared copy assignment operator [-Werror,-Wdeprecated-copy]
+    TableKeyComparator &operator=(const TableKeyComparator &);
+                        ^
+/home/vagrant/RIOT/dist/tools/flatc/bin/include/flatbuffers/flatbuffers.h:1735:27: note: in implicit copy constructor for 'flatbuffers::FlatBufferBuilder::TableKeyComparator<reflection::Field>' first required here
+    std::sort(v, v + len, TableKeyComparator<T>(buf_));
+                          ^
+/home/vagrant/RIOT/dist/tools/flatc/bin/include/flatbuffers/flatbuffers.h:1749:12: note: in instantiation of function template specialization 'flatbuffers::FlatBufferBuilder::CreateVectorOfSortedTables<reflection::Field>' requested here
+    return CreateVectorOfSortedTables(data(*v), v->size());
+           ^
+/home/vagrant/RIOT/dist/tools/flatc/bin/src/idl_parser.cpp:2781:26: note: in instantiation of function template specialization 'flatbuffers::FlatBufferBuilder::CreateVectorOfSortedTables<reflection::Field>' requested here
+  auto flds__ = builder->CreateVectorOfSortedTables(&field_offsets);
+                         ^
+In file included from /home/vagrant/RIOT/dist/tools/flatc/bin/src/idl_parser.cpp:23:
+In file included from /home/vagrant/RIOT/dist/tools/flatc/bin/include/flatbuffers/idl.h:25:
+/home/vagrant/RIOT/dist/tools/flatc/bin/include/flatbuffers/flatbuffers.h:1720:25: error: definition of implicit copy constructor for 'TableKeyComparator<reflection::KeyValue>' is deprecated because it has a user-declared copy assignment operator [-Werror,-Wdeprecated-copy]
+    TableKeyComparator &operator=(const TableKeyComparator &);
+                        ^
+/home/vagrant/RIOT/dist/tools/flatc/bin/include/flatbuffers/flatbuffers.h:1735:27: note: in implicit copy constructor for 'flatbuffers::FlatBufferBuilder::TableKeyComparator<reflection::KeyValue>' first required here
+    std::sort(v, v + len, TableKeyComparator<T>(buf_));
+                          ^
+/home/vagrant/RIOT/dist/tools/flatc/bin/include/flatbuffers/flatbuffers.h:1749:12: note: in instantiation of function template specialization 'flatbuffers::FlatBufferBuilder::CreateVectorOfSortedTables<reflection::KeyValue>' requested here
+    return CreateVectorOfSortedTables(data(*v), v->size());
+           ^
+/home/vagrant/RIOT/dist/tools/flatc/bin/src/idl_parser.cpp:3050:21: note: in instantiation of function template specialization 'flatbuffers::FlatBufferBuilder::CreateVectorOfSortedTables<reflection::KeyValue>' requested here
+    return builder->CreateVectorOfSortedTables(&attrs);
+                    ^
+5 errors generated.
+gmake[4]: *** [CMakeFiles/flatc.dir/build.make:96: CMakeFiles/flatc.dir/src/idl_parser.cpp.o] Error 1
+gmake[3]: *** [CMakeFiles/Makefile2:96: CMakeFiles/flatc.dir/all] Error 2
+gmake[2]: *** [Makefile:172: all] Error 2
+gmake[1]: *** [Makefile:27: all] Error 2
+make: *** [/home/vagrant/RIOT/makefiles/tools/targets.inc.mk:45: /home/vagrant/RIOT/dist/tools/flatc/flatc] Error 2
+
+Return value: 2
